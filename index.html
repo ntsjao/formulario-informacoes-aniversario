@@ -1,0 +1,357 @@
+<!-- =========================
+ARQUIVO: index.html
+========================= -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Briefing Fotográfico | Aniversário</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+
+      <span class="tag">
+        Briefing Profissional
+      </span>
+
+      <h1>
+        Cobertura de
+        <span>Aniversário</span>
+      </h1>
+
+      <p>
+        Preencha o briefing abaixo para alinhar todos os detalhes da cobertura fotográfica do evento.
+      </p>
+
+      <a href="#formulario" class="hero-btn">
+        Preencher Formulário
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- FORM -->
+  <section class="form-section" id="formulario">
+
+    <div class="container">
+
+      <div class="title-area">
+
+        <h2>
+          Checklist do Evento
+        </h2>
+
+        <p>
+          Quanto mais detalhes forem preenchidos,
+          melhor será a organização da cobertura.
+        </p>
+
+      </div>
+
+      <form id="briefingForm">
+
+        <!-- INFORMAÇÕES GERAIS -->
+        <div class="card">
+
+          <div class="card-title">
+            <div class="icon">🎉</div>
+            <h3>Informações Gerais</h3>
+          </div>
+
+          <div class="grid">
+
+            <div class="input-group">
+              <label>Nome do aniversariante</label>
+              <input type="text" id="nome" required>
+            </div>
+
+            <div class="input-group">
+              <label>Idade comemorada</label>
+              <input type="text" id="idade">
+            </div>
+
+            <div class="input-group">
+              <label>Data do evento</label>
+              <input type="date" id="data">
+            </div>
+
+            <div class="input-group">
+              <label>Horário de início</label>
+              <input type="time" id="inicio">
+            </div>
+
+            <div class="input-group">
+              <label>Horário do parabéns</label>
+              <input type="time" id="parabens">
+            </div>
+
+            <div class="input-group">
+              <label>Horário de encerramento</label>
+              <input type="time" id="encerramento">
+            </div>
+
+          </div>
+
+          <div class="input-group">
+            <label>Local do evento</label>
+            <input type="text" id="local">
+          </div>
+
+          <div class="grid">
+
+            <div class="input-group">
+              <label>Espaço</label>
+
+              <select id="espaco">
+                <option>Selecione</option>
+                <option>Aberto</option>
+                <option>Fechado</option>
+                <option>Misto</option>
+              </select>
+            </div>
+
+            <div class="input-group">
+              <label>Quantidade de convidados</label>
+              <input type="number" id="convidados">
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- ESTILO -->
+        <div class="card">
+
+          <div class="card-title">
+            <div class="icon">📸</div>
+            <h3>Estilo da Cobertura</h3>
+          </div>
+
+          <div class="checkbox-grid">
+
+            <label class="check-card">
+              <input type="checkbox" id="espontaneas">
+              <span>Fotos espontâneas</span>
+            </label>
+
+            <label class="check-card">
+              <input type="checkbox" id="posadas">
+              <span>Fotos posadas</span>
+            </label>
+
+            <label class="check-card">
+              <input type="checkbox" id="misto">
+              <span>Mistura dos estilos</span>
+            </label>
+
+            <label class="check-card">
+              <input type="checkbox" id="instagram">
+              <span>Fotos para Instagram</span>
+            </label>
+
+          </div>
+
+          <div class="input-group">
+            <label>Referências ou inspirações</label>
+            <textarea id="referencias"></textarea>
+          </div>
+
+          <div class="input-group">
+            <label>Tema ou cores da festa</label>
+            <input type="text" id="tema">
+          </div>
+
+        </div>
+
+        <!-- PESSOAS -->
+        <div class="card">
+
+          <div class="card-title">
+            <div class="icon">👨‍👩‍👧</div>
+            <h3>Pessoas Importantes</h3>
+          </div>
+
+          <div class="input-group">
+            <label>Quem não pode faltar nas fotos?</label>
+            <textarea id="importantes"></textarea>
+          </div>
+
+          <div class="input-group">
+            <label>Momentos especiais ou surpresas</label>
+            <textarea id="momentos"></textarea>
+          </div>
+
+          <div class="input-group">
+            <label>Convidados importantes vindo de fora</label>
+            <textarea id="convidadosFora"></textarea>
+          </div>
+
+        </div>
+
+        <!-- ORGANIZAÇÃO -->
+        <div class="card">
+
+          <div class="card-title">
+            <div class="icon">✨</div>
+            <h3>Organização do Evento</h3>
+          </div>
+
+          <div class="checkbox-grid">
+
+            <label class="check-card">
+              <input type="checkbox" id="recepcao">
+              <span>Recepção na entrada</span>
+            </label>
+
+            <label class="check-card">
+              <input type="checkbox" id="atracoes">
+              <span>Atrações ou apresentações</span>
+            </label>
+
+            <label class="check-card">
+              <input type="checkbox" id="kids">
+              <span>Espaço Kids</span>
+            </label>
+
+            <label class="check-card">
+              <input type="checkbox" id="mesa">
+              <span>Mesa especial</span>
+            </label>
+
+            <label class="check-card">
+              <input type="checkbox" id="lembrancas">
+              <span>Lembrancinhas</span>
+            </label>
+
+            <label class="check-card">
+              <input type="checkbox" id="dj">
+              <span>DJ / Música</span>
+            </label>
+
+          </div>
+
+        </div>
+
+        <!-- ALBUM -->
+        <div class="card">
+
+          <div class="card-title">
+            <div class="icon">📖</div>
+            <h3>Sobre o Álbum</h3>
+          </div>
+
+          <div class="grid">
+
+            <div class="input-group">
+              <label>Deseja álbum impresso?</label>
+
+              <select id="album">
+                <option>Selecione</option>
+                <option>Sim</option>
+                <option>Não</option>
+                <option>Talvez</option>
+              </select>
+            </div>
+
+            <div class="input-group">
+              <label>Estilo do álbum</label>
+
+              <select id="albumEstilo">
+                <option>Selecione</option>
+                <option>Premium / Clean</option>
+                <option>Dinâmico / Cheio</option>
+                <option>Misto</option>
+              </select>
+            </div>
+
+          </div>
+
+          <div class="input-group">
+            <label>Fotos obrigatórias</label>
+            <textarea id="fotosObrigatorias"></textarea>
+          </div>
+
+        </div>
+
+        <!-- ENTREGA -->
+        <div class="card">
+
+          <div class="card-title">
+            <div class="icon">🚀</div>
+            <h3>Entrega</h3>
+          </div>
+
+          <div class="grid">
+
+            <div class="input-group">
+              <label>Forma de entrega</label>
+
+              <select id="entrega">
+                <option>Selecione</option>
+                <option>Link Online</option>
+                <option>Galeria Privada</option>
+                <option>Pendrive</option>
+              </select>
+            </div>
+
+            <div class="input-group">
+              <label>Prazo desejado</label>
+              <input type="text" id="prazo">
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- OBS -->
+        <div class="card">
+
+          <div class="card-title">
+            <div class="icon">📝</div>
+            <h3>Observações</h3>
+          </div>
+
+          <div class="input-group">
+            <label>Informações adicionais</label>
+
+            <textarea id="observacoes"></textarea>
+          </div>
+
+        </div>
+
+        <button class="submit-btn" type="submit">
+          Enviar Briefing
+        </button>
+
+      </form>
+
+    </div>
+
+  </section>
+
+  <!-- ALERTA -->
+  <div class="success-message" id="successMessage">
+    ✅ Redirecionando para o WhatsApp...
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
